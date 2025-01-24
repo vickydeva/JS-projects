@@ -16,6 +16,7 @@ async function searchMovie() {
   const json = await data.json();
   console.log(json);
   if (json.Title) {
+    not.classList.add("remove");
     visible.classList.remove("hidden");
     title.innerText = json.Title;
     year.innerText = json.Released;
@@ -32,3 +33,10 @@ async function searchMovie() {
   }
   movieName.value = "";
 }
+
+const enter = document.getElementById("search-box");
+enter.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    searchMovie();
+  }
+});
