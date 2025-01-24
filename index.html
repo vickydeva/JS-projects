@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./movie-camera-favicons/web/icons8-movie-camera-undefined-96.png"
+      type="image/x-icon"
+    />
+    <title>Movie List</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-box"
+          placeholder="Search the Movie..."
+          id="search-box"
+        />
+        <button class="search-btn" onclick="searchMovie()">Search</button>
+      </div>
+      <h2 id="not">Movie not available</h2>
+      <div class="output-container hidden">
+        
+        <div class="movie-info ">
+          <h2 id="title">RRR</h2>
+          <p>Director : <span id="director">Rajmouli</span></p>
+
+          <p>Actor : <span id="actors">Ram charan</span></p>
+          <p>Description : <span id="desc">About the movie </span></p>
+
+          <p>Awards : <span id="awards">sima</span></p>
+          <p>Genre : <span id="genre">action</span></p>
+
+          <p>IMDB Ratings : <span id="rating">4.5</span></p>
+
+          <p>Released On : <span id="year">2024</span></p>
+        </div>
+        <div class="poster-container">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_SX300.jpg"
+            alt="movie-poster"
+            id="poster"
+          />
+        </div>
+      </div>
+      <div class="footer">
+        <p class="copyright">Copyright @ 2025.</p>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
